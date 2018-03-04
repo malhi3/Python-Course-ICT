@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Course Homepage | Introduction To Python For Beginners</title>
+  <link rel="stylesheet" type="text/css" href="basic-syntax-w1.css">
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+</head>
+<body>
+<header>
+<nav>
+  <ul id="main-nav">
+    <div id="nav">
+    <li id="logo"><a href="Homepage.html"><img src="logo.png" alt="logo" width="30px"/></a></li>
+    <li id="homepage"><a href="homepage.html">Homepage</a></li>
+    <li id="course-content"><a href="python-uses-w1.html">Course Content</a></li>
+    <li id="discussions"><a href="forums.html">Discussions</a></li>
+    <li id="progress"><a href="progress.html">Progress</a></li>
+  </div>
+  </ul>
+</nav>
+</header>
+<div id="vertical-nav">
+  <ul>
+    <li>Week 1: An Introduction To Python</li>
+    <li class="indented"><a href="python-uses-w1.html">Python and Its Uses</a></li>
+    <li class="indented"><a href="basic-syntax-w1.html" style="color: #9FFFCB;">Basic Python Syntax</a></li>
+    <li class="indented double-indented"><a href="python-variables-w1.html">Python Variables</a></li>
+    <li class="indented double-indented"><a href="python-operators-w1.html">Python Operators</a></li>
+    <li class="indented double-indented"><a href="python-conditionals-w1.html">Python Conditionals</a></li>
+    <li class="indented double-indented"><a href="python-loops-w1.html">Python Loops</a></li>
+  </ul>
+</div>
+<div id="container">
+  <div id="content">
+    <h1>Basic Python Syntax</h1>
+    <h2>Interpreters and Scripts</h2>
+    <p>Python has 2 ways to code it - an interpreter and a script. Python is a language that runs line by line, i.e., it does not convert the entire program into binary in 1 go, it does it line by line, and executers each line at a time, until it encounters an error. Because of this, it can be used as sort of a command line interface, where you just type in a command, press enter, and it will give you the output. This is the Python interpreter. However, scripts let you type in a series of commends, and execute them together. What we will be using are scripts. This means you must save your file in the ".py" extention.</p>
+
+    <p>The following sections will cover some basic Python syntax and understanding some key basic concepts.</p>
+
+    <h2>Identifiers</h2>
+    <p>An identifier in Python is a piece of text, or a name that is used to identify anything in Python. This is not restricted to only letter, and can include capitlal letters, lowercase letters, underscores, and numbers. It is important to note that python is <strong>case sensitive</strong>. This means that it treats a capital letter different from the same lowercase letter. For example, "Python" and "python" are 2 different identifiers. Python also has certain rules for different identifiers:</p>
+    <ul class="p-ul">
+      <li>All identifiers start with lowercase letters, except class names which start with uppercase</li>
+      <li>If you start an identifier with an underscore, it changes its rule to private</li>
+      <li>If there are 2 underscores behind an identifier its rule is set to strongly private</li>
+      <li>If it has 2 underscores after the identifier, it is a language-defined special name></li>
+    </ul>
+    
+    <h2>Indentation</h2>
+    <p>Python script requires indentation to identify blocks of code. In other languages, they may use braces ({...}) to indicate a block of code. A thing to note is that most programming language have different "blocks" of code, in the form of functions, conditionels, or loops (more into that later). But in order to iunderstand what belongs to what block, Python uses semicolon (:) and an indentation, which is nothing but a tab space. Take a look at the following code:</p>
+    
+    <div class="code">
+      <p class="code-text">1. i = 0</p>
+      <p class="code-text">2. myStr = "hello world"</p>
+      <p class="code-text">3. if i == 0:</p>
+      <p class="code-text">4. &nbsp;&nbsp; f = "in if"</p>
+      <p class="code-text">5. &nbsp;&nbsp; print myStr</p>
+      <p class="code-text">6. print f</p>
+    </div>
+    <p>As you can see from above, the statements that have a tab space in between them (f = "inif" and print myStr) show that they are called within the if conditional. We know it is the if conditionel because after the statement is a semicolon, indicating everything after a single indentation will be called within it. Most IDEs automatically does it for you. JSBin also does it automatically.</p>
+    <p>These individual statements, which together make up a block are called <strong>suites</strong>. Complex statements, such as if, def, for, class, etc. require a header line and the suite. The headerline begins with the statement, such as if, and then ends with a semicolon, indicating any indented statements after it make up the suite</p>
+    <h2>Keywords and Reserved Words</h2>
+    <p>Like all programming languages, Python has a set of words that you cannot use as variable names or any identifier name. These are always in lowercase letters. They include:</p>
+    <table id="keywords-table" style="text-align:center;">
+<tbody><tr>
+<td>and</td>
+<td>exec</td>
+<td>not</td>
+</tr>
+<tr>
+<td>assert</td>
+<td>finally</td>
+<td>or</td>
+</tr>
+<tr>
+<td>break</td>
+<td>for</td>
+<td>pass</td>
+</tr>
+<tr>
+<td>class</td>
+<td>from</td>
+<td>print</td>
+</tr>
+<tr>
+<td>continue</td>
+<td>global</td>
+<td>raise</td>
+</tr>
+<tr>
+<td>def</td>
+<td>if</td>
+<td>return</td>
+</tr>
+<tr>
+<td>del</td>
+<td>import</td>
+<td>try</td>
+</tr>
+<tr>
+<td>elif</td>
+<td>in</td>
+<td>while</td>
+</tr>
+<tr>
+<td>else</td>
+<td>is</td>
+<td>with </td>
+</tr>
+<tr>
+<td>except</td>
+<td>lambda</td>
+<td>yield</td>
+</tr>
+</tbody></table>
+  <p>Don't worry if you can't memorise all of them - with practice you will be able to easily identify keywords and which aren't.</p>
+  <h2>Quotations and Blank Spaces</h2>
+  <p>Quotation marks are used to denote strings, which are just pieces of text. Python accepts single quotation marks ('...'), double quotation marks ("..."), and triple quotation marks ("""...""" or '''...'''). These are all accepted as long as the statement starts and terminates with it. Using more quotation marks can be for when the string itself contains quotation marks! For example, if the string is:</p>
+  <p style="text-align: center;">The capital of China is "Beijing", and the capital of India is "New Delhi"</p>
+  <p>Then you would use it in the following style:</p>
+  <div class="code">
+    <p class="code-text">1. myStr = 'The capital of China is "Beijing", and the capital of India is "New Delhi"'</p>
+    <p class="code-text">2. print myStr</p>
+  </div>
+  <p>If you want to include a blank line when outputting or storing the string you type "\n". For example:</p>
+  <div class="code">
+    <p class="code-text">1. myStr = 'The capital of China is "Beijing"\nThe capital of India is "New Delhi"'</p>
+    <p class="code-text">2. print myStr</p>
+  </div>
+  <p>This will output as:</p>
+  <p style="text-align: center; font-family:'Inconsolata';">The capital of China is "Beijing"</p>
+  <p style="text-align: center; font-family:'Inconsolata';">The capital of India is "New Delhi"</p>
+  <h2>Comments</h2>
+  <p>In general programming, a comment is a line that is not taken in or "considered" by the computer when it is running the code. This is good for developers and teams working together, as they can type, within the comments, what the piece of code does. It is best practice to put comments into every code you write so you or other people can understand it better. Comments are preceded with a hash sign (#), and everything in that line is considered the comment. However, it is only the contents of that line, not the lines below it.</p>
+  <div class="code" style="margin-bottom: 30px;">
+    <p class="code-text">1. #This is my comment. It is not considered when executing the program</p>
+    <p class="code-text">2. myStr = 'The capital of China is "Beijing"\nThe capital of India is "New Delhi"'</p>
+    <p class="code-text">3. #It can be anywhere in the code.</p>
+    <p class="code-text">4. #Here is an example of how to best use comments.</p>
+    <p class="code-text">5. #It can be anywhere in the code.</p>
+    <p class="code-text">4. &nbsp;</p>
+    <p class="code-text">6. print myStr</p>
+  </div>
+  <a class="nav-buttons buttons" id="previous-topic" href="python-uses-w1.html">Previous: Python and its Uses</a>
+  <a class="nav-buttons buttons" id="next-topic" href="python-variables-w1.html">Next: Python Variables</a>
+  </div>
+</div>
+</body>
+</html>

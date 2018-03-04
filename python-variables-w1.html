@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Course Homepage | Introduction To Python For Beginners</title>
+  <link rel="stylesheet" type="text/css" href="python-variables-w1.css">
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+</head>
+<body>
+<header>
+<nav>
+  <ul id="main-nav">
+    <div id="nav">
+    <li id="logo"><a href="Homepage.html"><img src="logo.png" alt="logo" width="30px"/></a></li>
+    <li id="homepage"><a href="homepage.html">Homepage</a></li>
+    <li id="course-content"><a href="python-uses-w1.html">Course Content</a></li>
+    <li id="discussions"><a href="forums.html">Discussions</a></li>
+    <li id="progress"><a href="progress.html">Progress</a></li>
+  </div>
+  </ul>
+</nav>
+</header>
+<div id="vertical-nav">
+  <ul>
+    <li>Week 1: An Introduction To Python</li>
+    <li class="indented"><a href="python-uses-w1.html">Python and Its Uses</a></li>
+    <li class="indented"><a href="basic-syntax-w1.html">Basic Python Syntax</a></li>
+    <li class="indented double-indented"><a href="basic-syntax-w1.html" style="color: #9FFFCB;">Python Variables</a></li>
+    <li class="indented double-indented"><a href="python-operators-w1.html">Python Operators</a></li>
+    <li class="indented double-indented"><a href="python-conditionals-w1.html">Python Conditionals</a></li>
+    <li class="indented double-indented"><a href="python-loops-w1.html">Python Loops</a></li>
+  </ul>
+</div>
+<div id="container">
+  <div id="content">
+    <h1>Python Variables</h1>
+    <h2>What is a variable?</h2>
+    <p>In any programming language, one of the fundamental concepts are variables. So what are they? In math, you may have heard of variables being any letter than has been assigned a value. This is the same in Python and all programming langauges. Except here, it is a name, it could be any name which follows the rules for identifiers, as discussed in the <a href="basic-syntax-w1.html">previous section</a>, to which a value is assigned to it. And unlike in math, this value could be of many different forms, known as types, which we will be taking a look at.</p>
+    <h2>Assigning Values to Variables</h2>
+    <p>Assigning values in Python is very simple. In some languages such as java, you need to also provide the type of variable, but Python automatically recognises is. The way to go about doing it is literally by saying "let [variable name] equal [value]", except without the let. Here are some examples, with different variable types:</p>
+    <div class="code">
+      <p class="code-text">1. age = 10</p>
+      <p class="code-text">2. nameOfUser = "Michael"</p>
+      <p class="code-text">3. grades_of_user = [100, 90, 99, 98]</p>
+      <p class="code-text">4. nameOfUser_2 = "Samantha"</p>
+    </div>
+    <p>You can also assign multiple variables in the same line, by separating them with a comma.</p>
+    <div class="code">
+      <p class="code-text">1. age, nameOfUser, grades_of_user = 10, "Michael", [100, 90, 99, 98]</p>
+    </div>
+    <p>Finally, you can assign a single value to several variables, by making them equal each other</p>
+    <div class="code" style="margin-bottom: 40px;">
+      <p class="code-text">1. age1 = age2 = age3 = age4 = 17</p>
+    </div>
+    <h2>Variable Types</h2>
+    <p>In this section we will be discussing the different types of variables that exist in Python. These types include:</p>
+    <ul class="p-ul">
+      <li><a href="#number">Number</a></li>
+      <li><a href="#string">String</a></li>
+      <li><a href="#list">List</a></li>
+      <li><a href="#tuple">Tuple</a></li>
+      <li><a href="#dictionary">Dictionary</a></li>
+    </ul>
+    <h3 id="number">Numbers</h3>
+    <p>Numbers are simple - they are numeric values that are stored in variables. What is special about numeric values is that number variables can be used to do math. For example, if you store numbers in strings, they will be treated as text and hence you cannot perform mathematical operations with them. A number variable could include any of the following:</p>
+    <ul class="p-ul">
+      <li>int (integer values)</li>
+      <li>float (floating point or decimal values)</li>
+      <li>long (like an integer, but has a larger range, i.e., can support larger values. Can be represented in octal or hexadecimal)</li>
+      <li>complex (complex/imaginary numbers)</li>
+    </ul>
+
+    <h3 id="string">Strings and Indexes</h3>
+    <p>These are also pretty straight forward. As breifly mentioned in the previous section, strings are just pieces of text. They could include anything within them, and do not have any restrictions to keywords. However, these must be contained within the quotation marks, otherwise they will not be considered strings. In most programming languages including Python, strings are arrays of characters. An array is nothing but a sequence of values, combined together into one object. In the case of a string, it is a sequence of characters. This means that certain characters can be "extracted" from that string. In all programming languages, characters, lists, and list of values is always indexed. This means the position of each of these values has a certain key or number, known as an index. By default, indexes are numbers that start from 0. The first value has an index of 0, the second 1, the third 2, and so on until the last one. The last one can also be accessed with the index of -1. An index or key is always enclosed in square brackets ([]) with the number inside. The following lines of code show the different ways to use indexes with strings (or any type of list):</p>
+    <div class="code">
+      <p class="code-text">1. name = "LmaoFireFireEmoji"</p>
+      <p class="code-text">2. print name #displays the entire string</p>
+      <p class="code-text">3. print name[0] #displays the first character "L"</p>
+      <p class="code-text">4. print name[-1] #displays the last character "i"</p>
+      <p class="code-text">5. print name[3:6] #displays a string from the 4th character to the 7th "oFi"</p>
+      <p class="code-text">6. print name[4:] #displays everything from the 5th character "FireFireEmoji"</p>
+    </div>
+    <p>Strings can be concatenated. This means that when a plus operator (+) is used, it combines the 2 strings together. This is the same with the multiplication operator (*) because after all, a multiplication is simply a series of additions.</p>
+    <div class="code">
+      <p class="code-text">1. name = "Steven"</p>
+      <p class="code-text">2. birthplace = "Timbuktu"</p>
+      <p class="code-text">3. print name + birthplace #displays "StevenTimbuktu"</p>
+      <p class="code-text">4. concatenation = name + " " + "Austins"</p>
+      <p class="code-text">5. print concatenation #displays "Steven Austins"</p>
+      <p class="code-text">6. print name * 3 #displays name 3 times "StevenStevenSteven"</p>
+    </div>
+    <h3 id="list">Lists</h3>
+    <p>A list is another data type which as the name suggests, contains a list of values. This is similar to an array, with the exception that there can be nested lists. A list contains different objects that could be of various types contained in it, separated with commas. It is always surrounded by square brackets. A list can be iterated or "run" over in indexes, the same way a string does. Concarenating a list simply combines them into one. </p>
+    <div class="code">
+      <p class="code-text">1. grades = [100, 98, 99, 97]</p>
+      <p class="code-text">2. randomValues = [5, "Boy", "25", 17.15]</p>
+      <p class="code-text">3. print grades + randomValues #displays [100, 98, 99, 97, 5, "Boy", "25", 17.15]</p>
+      <p class="code-text">4. nestedList = ["First Value", "Second", [80, 90, 100], "Final"]</p>
+    </div>
+    <p>Line 4 of the code above contains a nested list. This means it is a list within a list. The nested list is in the 3rd position, or the 2nd index. By simple calling variableName[index] of the nested list, it will output the entire list. Instead, you use the following syntax:</p>
+    <div class="code">
+      <p class="code-text">1. nestedList = ["First Value", "Second", [80, 90, 100], "Final"]</p>
+      <p class="code-text">2. print nestedList[2] #displays whole list [80, 90, 100]</p>
+      <p class="code-text">3. print nestedList[2][0] #displays the 1st value from the list in the 2nd index - 80</p>
+      <p class="code-text">4. print nestedList[2][2] #displays the 3rd value from the list in the 2nd index - 100</p>
+    </div>
+    <h3 id="tuple">Tuples</h3>
+    <p>Tuples are a data type that are very similar to lists. They also hold a list of values in it. However there is 1 major functional difference - tuples are sort of like read-only lists. This means that the contents of the tuple cannot be updated or deleted, while lists can be constantly changed. To differentiate between a list and a tuple, you put parentheses instead of square brackets.</p>
+    <div class="code">
+      <p class="code-text">1. myTuple = ("First Value", "Second", 100, 75.10)</p>
+    </div>
+    <h3 id="dictionary">Dictionaries</h3>
+    <p>Dictionaries are also like lists, except that the indexes are called keys. In real life, dictionaries have a word followed by its meaning. The meaning of a word can be found by simply searching for the word in the dictionary. This is a similar concept in Python. The "word" is called a key and can have any form of value, that does not have to be in any specific order, and it's "meaning" are known as values, together making up key-value pairs. A dictionary is surrounded by curly braces ({}) and contains key-value pairs separated by commas. Just like we call the different objects in the list using square brackets around indexes, we get the value of a desired key by enclosing that key in square brackets. The key value pairs are separated with a colon, with the key first - [key] : [value].</p>
+    <div class="code" style="margin-bottom: 30px;">
+      <p class="code-text">1. myDict = {</p>
+      <p class="code-text">2. &nbsp;&nbsp;"name": "John"</p>
+      <p class="code-text">3. &nbsp;&nbsp;"age": 15</p>
+      <p class="code-text">4. &nbsp;&nbsp;"gender": "unspecified"</p>
+      <p class="code-text">5. }</p>
+      <p class="code-text">6. print myDict["name"] #displays "John"</p>
+      <p class="code-text">6. print myDict["gender"] #displays "unspecified"</p>
+    </div>
+    <h2>Quiz</h2>
+    <p>Here is a short quiz to test what you've learnt so far.</p>
+    <h4>What is a variable?</h4>
+    <div style="margin-bottom: 30px;">
+    <form>
+      <input type="radio" name="q1"> A series of values connected in 1 object<br>
+      <input type="radio" name="q1"> A name/identifier which stores a value<br>
+      <input type="radio" name="q1"> A list arranged in alphabetical order<br>
+      <button>Submit</button>
+    </form>
+    <h4>Are lists surrounded by square brackets or curly braces?</h4>
+    <form>
+      <input type="radio" name="q1"> Square<br>
+      <input type="radio" name="q1"> Braces<br>
+      <button>Submit</button>
+    </form>
+    <h4>What is the difference between a list and tuple?</h4>
+    <form>
+      <input type="text" name="q1">
+      <button>Submit</button>
+    </form>
+    </div>
+    <a class="nav-buttons buttons" id="previous-topic" href="basic-syntax-w1.html">Previous: Basic Python Syntax</a>
+    <a class="nav-buttons buttons" id="next-topic" href="python-operators-w1">Next: Python Operators</a>
+  </div>
+</div>
+</body>
+</html>

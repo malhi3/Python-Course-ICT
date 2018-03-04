@@ -1,0 +1,185 @@
+body{
+  font-family: sans-serif;
+}
+
+a{
+  text-decoration: none;
+}
+
+#logo{
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+nav ul{
+  position: fixed;
+  box-shadow: 0px 1px 4px #DEDEDE;
+  background-color: white;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 2;
+}
+
+#main-nav{
+  z-index: 1;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+#main-nav li{
+  letter-spacing: 1px;
+  float: left;
+  margin: 20px;
+  font-size: 17px;
+  padding-bottom: 1px;
+}
+
+nav ul a{
+  text-decoration: none;
+  color: black;
+}
+
+nav ul a:hover{
+  color: grey;
+}
+
+#course-content{
+  color: #004E64;
+  border-bottom: solid #00A5CF;
+}
+
+#nav{
+  width: 740px;
+  margin: 0 auto;
+}
+
+#vertical-nav{
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 20%;
+  background-color: #004E64;
+}
+
+#vertical-nav ul{
+  padding: 80px 10px;
+  list-style-type: none;
+  color: white; 
+}
+
+#vertical-nav ul li a{
+  display: block;
+  text-decoration: none;
+  color: #00A5CF;
+}
+
+#vertical-nav ul li a:hover{
+  color: #9FFFCB;
+}
+
+.indented{
+  margin-top: 5px;
+  margin-left: 20px;
+}
+
+.double-indented{
+  margin-left: 40px;
+}
+
+#container{
+  border: solid white;
+  width: 80%;
+  margin-left: 20%;
+  margin-top: 70px;
+}
+
+#container a{
+  color: #00A5CF;
+}
+
+#container a:hover{
+  color: #9FFFCB;
+}
+
+.buttons{
+  padding: 8px;
+  border: solid 1px;
+  color: #00A5CF;
+}
+
+#content{
+  //border: solid;
+  margin: 10px 100px 0 20px;
+}
+
+#content h1{
+  letter-spacing: 1px;
+}
+
+#container img{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+p{
+    line-height: 1.6em;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.nav-buttons{
+    display: inline;
+    margin-bottom: 20px;
+}
+
+#next-topic{
+  float: right;
+}
+
+#previous-topic{
+  float: left;
+}
+
+.p-ul{
+  line-height: 1.6em;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+.code-text{
+  line-height: 1px;
+  font-family: 'Inconsolata', monospace;
+  color: #25A18E;
+}
+
+.code{
+  border: solid 1px grey;
+  padding-left: 30px;
+  border-radius: 10px;
+  background-color: #9FFFCB;
+}
+
+#keywords-table, #keywords-table th, #keywords-table td{
+  border: solid 1px;
+  border-collapse: collapse;
+}
+
+#keywords-table td{
+  padding: 10px;
+}
+
+#keywords-table{
+  width: 600px;
+  margin: 0 auto;
+}
